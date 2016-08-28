@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffffff"
+    >
+
+    <com.example.demo_buying.BuyingPagerIndicator
+        android:id="@+id/buying_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2D3845"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@id/buying_indicator"
+        android:id="@+id/id_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/trilateral"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buying_indicator"/>
+
+</RelativeLayout>
